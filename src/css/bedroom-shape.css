@@ -1,0 +1,1046 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+.bedroom-shape-page {
+  --bc-ink: #17332d;
+  --bc-muted: #687972;
+  --bc-bg: #eef5f1;
+  --bc-surface: #ffffff;
+  --bc-line: #d7e4de;
+  --bc-green: #155f52;
+  --bc-green-dark: #10483f;
+  --bc-green-soft: #dff1e9;
+  --bc-coral: #e86647;
+  --bc-coral-soft: #ffebe5;
+  --bc-blue: #4388b8;
+  --bc-blue-soft: #e3f1f8;
+  --bc-yellow: #f1bd4f;
+  --bc-danger: #b74336;
+  --bc-shadow: 0 16px 36px rgba(30, 75, 63, 0.08);
+  --bc-serif: "Fraunces", Georgia, serif;
+  --bc-sans: "Work Sans", "Segoe UI", sans-serif;
+
+  min-height: 100vh;
+  padding: 34px 34px 72px;
+  background: var(--bc-bg);
+  color: var(--bc-ink);
+  color-scheme: light;
+  font-family: var(--bc-sans);
+  letter-spacing: 0;
+}
+
+.bedroom-shape-page *,
+.bedroom-shape-page *::before,
+.bedroom-shape-page *::after {
+  box-sizing: border-box;
+}
+
+.bedroom-shape-page button,
+.bedroom-shape-page input {
+  font: inherit;
+  letter-spacing: 0;
+}
+
+.bedroom-shape-page button {
+  color: inherit;
+}
+
+.bedroom-shape-page .customizer-shell {
+  width: min(100%, 1480px);
+  margin: 0 auto;
+}
+
+.bedroom-shape-page .customizer-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 4px 2px 30px;
+}
+
+.bedroom-shape-page .customizer-heading-copy {
+  max-width: 720px;
+}
+
+.bedroom-shape-page .customizer-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 20px;
+  color: var(--bc-muted);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bedroom-shape-page .customizer-back-link:hover {
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .customizer-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 9px;
+  color: var(--bc-coral);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bedroom-shape-page .customizer-header h1 {
+  margin: 0;
+  color: var(--bc-ink);
+  font-family: var(--bc-serif);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.bedroom-shape-page .customizer-header p {
+  max-width: 630px;
+  margin: 11px 0 0;
+  color: var(--bc-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bedroom-shape-page .room-overview {
+  width: 220px;
+  flex: 0 0 220px;
+  padding: 17px 18px;
+  border: 1px solid var(--bc-line);
+  border-top: 4px solid var(--bc-yellow);
+  border-radius: 8px;
+  background: var(--bc-surface);
+  box-shadow: var(--bc-shadow);
+}
+
+.bedroom-shape-page .room-overview span,
+.bedroom-shape-page .room-overview small {
+  display: block;
+  color: var(--bc-muted);
+  font-size: 11px;
+}
+
+.bedroom-shape-page .room-overview span {
+  margin-bottom: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bedroom-shape-page .room-overview strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--bc-ink);
+  font-family: var(--bc-serif);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.bedroom-shape-page .customizer-layout {
+  display: grid;
+  grid-template-columns: 342px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.bedroom-shape-page .customizer-panel,
+.bedroom-shape-page .planner-panel {
+  border: 1px solid var(--bc-line);
+  border-radius: 8px;
+  background: var(--bc-surface);
+  box-shadow: var(--bc-shadow);
+}
+
+.bedroom-shape-page .customizer-panel {
+  position: sticky;
+  top: 102px;
+  overflow: hidden;
+}
+
+.bedroom-shape-page .customizer-section {
+  padding: 21px;
+  border-bottom: 1px solid var(--bc-line);
+}
+
+.bedroom-shape-page .customizer-section-last {
+  border-bottom: 0;
+}
+
+.bedroom-shape-page .section-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 15px;
+}
+
+.bedroom-shape-page .section-icon {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--bc-green-soft);
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .section-icon-coral {
+  background: var(--bc-coral-soft);
+  color: var(--bc-coral);
+}
+
+.bedroom-shape-page .section-icon-blue {
+  background: var(--bc-blue-soft);
+  color: var(--bc-blue);
+}
+
+.bedroom-shape-page .section-heading div {
+  min-width: 0;
+}
+
+.bedroom-shape-page .section-heading div > span {
+  display: block;
+  margin-bottom: 1px;
+  color: var(--bc-muted);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bedroom-shape-page .section-heading h2 {
+  margin: 0;
+  color: var(--bc-ink);
+  font-family: var(--bc-sans);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.bedroom-shape-page .room-presets {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #edf3f0;
+}
+
+.bedroom-shape-page .room-presets button {
+  min-width: 0;
+  height: 34px;
+  padding: 0 5px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--bc-muted);
+  font-size: 11px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.bedroom-shape-page .room-presets button:hover {
+  background: #ffffff;
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .room-presets button.is-active {
+  background: var(--bc-green);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(21, 95, 82, 0.2);
+}
+
+.bedroom-shape-page .dimension-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.bedroom-shape-page .dimension-fields label {
+  min-width: 0;
+}
+
+.bedroom-shape-page .dimension-fields label > span:first-child {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--bc-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bedroom-shape-page .dimension-input {
+  display: flex;
+  height: 42px;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  border: 1px solid var(--bc-line);
+  border-radius: 7px;
+  background: #fbfdfc;
+}
+
+.bedroom-shape-page .dimension-input:focus-within {
+  border-color: var(--bc-green);
+  box-shadow: 0 0 0 3px rgba(21, 95, 82, 0.1);
+}
+
+.bedroom-shape-page .dimension-input input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--bc-ink);
+  font-size: 14px;
+  font-weight: 700;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.bedroom-shape-page .dimension-input input::-webkit-outer-spin-button,
+.bedroom-shape-page .dimension-input input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.bedroom-shape-page .dimension-input small {
+  color: var(--bc-muted);
+  font-size: 10px;
+}
+
+.bedroom-shape-page .furniture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 136px), 1fr));
+  gap: 9px;
+}
+
+.bedroom-shape-page .furniture-option {
+  position: relative;
+  min-width: 0;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid var(--bc-line);
+  border-radius: 8px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.bedroom-shape-page .furniture-option:hover {
+  transform: translateY(-2px);
+  border-color: #a9c9bc;
+  box-shadow: 0 8px 18px rgba(30, 75, 63, 0.1);
+}
+
+.bedroom-shape-page .furniture-type-icon {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #17332d;
+}
+
+.bedroom-shape-page .furniture-copy {
+  display: block;
+  min-width: 0;
+  padding-top: 7px;
+}
+
+.bedroom-shape-page .furniture-copy strong,
+.bedroom-shape-page .furniture-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bedroom-shape-page .furniture-copy strong {
+  color: var(--bc-ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bedroom-shape-page .furniture-copy small {
+  margin-top: 5px;
+  color: var(--bc-ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: normal;
+  overflow: visible;
+}
+
+.bedroom-shape-page .furniture-add {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bc-coral);
+  color: #ffffff;
+  box-shadow: 0 5px 12px rgba(199, 72, 41, 0.25);
+}
+
+.bedroom-shape-page .opening-hint {
+  margin: 0 0 12px;
+  color: var(--bc-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.bedroom-shape-page .opening-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.bedroom-shape-page .opening-option {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 40px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 9px;
+  min-height: 58px;
+  padding: 9px;
+  border: 1px solid var(--bc-line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--bc-muted);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.bedroom-shape-page .opening-option:hover {
+  transform: translateY(-1px);
+  border-color: #91beae;
+  box-shadow: 0 8px 18px rgba(30, 75, 63, 0.1);
+}
+
+.bedroom-shape-page .opening-preview {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(23, 51, 45, 0.14);
+  border-radius: 8px;
+}
+
+.bedroom-shape-page .opening-preview-door {
+  background: #f2f6f4;
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .opening-preview-window {
+  background: var(--bc-blue-soft);
+  color: var(--bc-blue);
+}
+
+.bedroom-shape-page .opening-option strong,
+.bedroom-shape-page .opening-option small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bedroom-shape-page .opening-option strong {
+  color: var(--bc-ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bedroom-shape-page .opening-option small {
+  margin-top: 2px;
+  color: var(--bc-muted);
+  font-size: 10px;
+}
+
+.bedroom-shape-page .opening-option > svg {
+  justify-self: center;
+  color: var(--bc-coral);
+}
+
+.bedroom-shape-page .planner-panel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.bedroom-shape-page .planner-toolbar {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 17px;
+  border-bottom: 1px solid var(--bc-line);
+}
+
+.bedroom-shape-page .planner-title {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.bedroom-shape-page .planner-title-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--bc-blue-soft);
+  color: var(--bc-blue);
+}
+
+.bedroom-shape-page .planner-title h2 {
+  margin: 0;
+  color: var(--bc-ink);
+  font-family: var(--bc-sans);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.bedroom-shape-page .planner-title p {
+  margin: 3px 0 0;
+  color: var(--bc-muted);
+  font-size: 11px;
+}
+
+.bedroom-shape-page .planner-actions {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.bedroom-shape-page .selected-item-name {
+  max-width: 120px;
+  margin-right: 2px;
+  overflow: hidden;
+  color: var(--bc-green);
+  font-size: 11px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bedroom-shape-page .planner-actions button {
+  display: inline-flex;
+  height: 36px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: 1px solid var(--bc-line);
+  border-radius: 7px;
+  background: #ffffff;
+  color: var(--bc-muted);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bedroom-shape-page .planner-actions button:hover {
+  border-color: #91beae;
+  background: #f5fbf8;
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .planner-actions .danger-action:hover {
+  border-color: #efb4a8;
+  background: #fff2ef;
+  color: var(--bc-danger);
+}
+
+.bedroom-shape-page .planner-actions .reset-action {
+  margin-left: 4px;
+  background: #f2f6f4;
+}
+
+.bedroom-shape-page .planner-notice {
+  margin: 0;
+  padding: 10px 17px;
+  border-bottom: 1px solid #efb4a8;
+  background: #fff2ef;
+  color: var(--bc-danger);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.bedroom-shape-page .room-stage {
+  display: grid;
+  height: 660px;
+  min-width: 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: 48px minmax(0, 1fr);
+  padding: 18px;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+.bedroom-shape-page .dimension-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: #222222;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.bedroom-shape-page .dimension-line small {
+  color: #666666;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.bedroom-shape-page .dimension-line-top {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  padding-bottom: 7px;
+}
+
+.bedroom-shape-page .dimension-line-top::before,
+.bedroom-shape-page .dimension-line-top::after {
+  width: min(120px, 22%);
+  height: 1px;
+  margin: 0 7px;
+  background: #b3b3b3;
+  content: "";
+}
+
+.bedroom-shape-page .dimension-line-left {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+  padding-right: 7px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.bedroom-shape-page .room-plan {
+  position: relative;
+  box-sizing: content-box;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 5px solid #222222;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.bedroom-shape-page .placed-item {
+  position: absolute;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  border: 1.5px solid;
+  border-radius: 5px;
+  box-shadow: 0 6px 14px rgba(46, 64, 56, 0.18);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transition: box-shadow 140ms ease, filter 140ms ease;
+}
+
+.bedroom-shape-page .placed-item:hover {
+  filter: brightness(1.04);
+}
+
+.bedroom-shape-page .placed-item.is-selected {
+  z-index: 2;
+  outline: 3px solid #ffffff;
+  box-shadow: 0 0 0 6px var(--bc-green), 0 12px 20px rgba(46, 64, 56, 0.2);
+}
+
+.bedroom-shape-page .placed-item.is-dragging {
+  z-index: 3;
+  cursor: grabbing;
+  filter: brightness(1.04);
+  box-shadow: 0 0 0 6px var(--bc-green), 0 18px 26px rgba(46, 64, 56, 0.25);
+}
+
+.bedroom-shape-page .placed-opening {
+  overflow: visible;
+  border-width: 2px;
+  box-shadow: 0 3px 8px rgba(46, 64, 56, 0.12);
+}
+
+.bedroom-shape-page .placed-opening:hover {
+  filter: none;
+}
+
+.bedroom-shape-page .placed-door {
+  background: #f9faf7;
+}
+
+.bedroom-shape-page .placed-window {
+  background: #dff4fb;
+}
+
+.bedroom-shape-page .placed-opening-content {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bedroom-shape-page .door-slab {
+  position: absolute;
+  inset: 3px 0;
+  border-radius: 999px;
+  background: #17463d;
+}
+
+.bedroom-shape-page .door-swing {
+  position: absolute;
+  left: -1px;
+  bottom: 100%;
+  width: min(84px, 95%);
+  aspect-ratio: 1;
+  border: 2px solid rgba(23, 70, 61, 0.42);
+  border-top-right-radius: 100%;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.bedroom-shape-page .placed-window .placed-opening-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  gap: 4px;
+  padding: 3px 8px;
+}
+
+.bedroom-shape-page .window-line {
+  width: 2px;
+  border-radius: 999px;
+  background: rgba(67, 136, 184, 0.75);
+}
+
+.bedroom-shape-page .placed-item-content {
+  display: flex;
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #17332d;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.bedroom-shape-page .placed-item-content.is-compact {
+  gap: 0;
+}
+
+.bedroom-shape-page .placed-item-content > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bedroom-shape-page .empty-room-message {
+  position: absolute;
+  inset: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px dashed rgba(23, 51, 45, 0.25);
+  border-radius: 5px;
+  color: rgba(23, 51, 45, 0.64);
+  text-align: center;
+}
+
+.bedroom-shape-page .empty-room-message strong {
+  font-family: var(--bc-serif);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bedroom-shape-page .planner-footer {
+  display: flex;
+  min-height: 62px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 11px 17px;
+  border-top: 1px solid var(--bc-line);
+}
+
+.bedroom-shape-page .planner-status,
+.bedroom-shape-page .planner-metrics,
+.bedroom-shape-page .planner-metrics span {
+  display: flex;
+  align-items: center;
+}
+
+.bedroom-shape-page .planner-status {
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bedroom-shape-page .planner-status.is-ready {
+  color: var(--bc-green);
+}
+
+.bedroom-shape-page .planner-status.is-warning {
+  color: var(--bc-danger);
+}
+
+.bedroom-shape-page .planner-metrics {
+  gap: 16px;
+  color: var(--bc-muted);
+  font-size: 10px;
+}
+
+.bedroom-shape-page .planner-metrics span {
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.bedroom-shape-page .planner-metrics strong {
+  color: var(--bc-ink);
+  font-size: 11px;
+}
+
+.bedroom-shape-page button:focus-visible,
+.bedroom-shape-page input:focus-visible,
+.bedroom-shape-page a:focus-visible {
+  outline: 3px solid rgba(67, 136, 184, 0.42);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1280px) {
+  .bedroom-shape-page {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .bedroom-shape-page .customizer-layout {
+    grid-template-columns: 320px minmax(0, 1fr);
+  }
+
+  .bedroom-shape-page .customizer-section {
+    padding: 18px;
+  }
+
+  .bedroom-shape-page .room-stage {
+    height: 600px;
+  }
+
+  .bedroom-shape-page .planner-actions button span {
+    display: none;
+  }
+
+  .bedroom-shape-page .planner-actions button {
+    width: 36px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .bedroom-shape-page {
+    padding-top: 28px;
+  }
+
+  .bedroom-shape-page .customizer-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bedroom-shape-page .customizer-panel {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .bedroom-shape-page .customizer-section {
+    border-right: 1px solid var(--bc-line);
+    border-bottom: 0;
+  }
+
+  .bedroom-shape-page .customizer-section-last {
+    border-right: 0;
+  }
+
+  .bedroom-shape-page .planner-actions button {
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .bedroom-shape-page .planner-actions button span {
+    display: inline;
+  }
+
+  .bedroom-shape-page .room-stage {
+    height: 590px;
+  }
+}
+
+@media (max-width: 760px) {
+  .bedroom-shape-page {
+    padding: 24px 16px 54px;
+  }
+
+  .bedroom-shape-page .customizer-header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bedroom-shape-page .customizer-header h1 {
+    font-size: 40px;
+  }
+
+  .bedroom-shape-page .room-overview {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .bedroom-shape-page .customizer-panel {
+    display: block;
+  }
+
+  .bedroom-shape-page .customizer-section {
+    border-right: 0;
+    border-bottom: 1px solid var(--bc-line);
+  }
+
+  .bedroom-shape-page .customizer-section-last {
+    border-bottom: 0;
+  }
+
+  .bedroom-shape-page .planner-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bedroom-shape-page .planner-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .bedroom-shape-page .planner-actions .reset-action {
+    margin-left: auto;
+  }
+
+  .bedroom-shape-page .room-stage {
+    height: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .bedroom-shape-page {
+    padding: 19px 11px 44px;
+  }
+
+  .bedroom-shape-page .customizer-header {
+    padding-bottom: 22px;
+  }
+
+  .bedroom-shape-page .customizer-back-link {
+    margin-bottom: 16px;
+  }
+
+  .bedroom-shape-page .customizer-header h1 {
+    font-size: 35px;
+  }
+
+  .bedroom-shape-page .customizer-header p {
+    font-size: 14px;
+  }
+
+  .bedroom-shape-page .planner-toolbar {
+    padding: 12px;
+  }
+
+  .bedroom-shape-page .selected-item-name {
+    max-width: 86px;
+  }
+
+  .bedroom-shape-page .planner-actions button,
+  .bedroom-shape-page .planner-actions .reset-action {
+    width: 36px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .bedroom-shape-page .planner-actions button span {
+    display: none;
+  }
+
+  .bedroom-shape-page .room-stage {
+    height: 440px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    grid-template-rows: 34px minmax(0, 1fr);
+    padding: 10px;
+  }
+
+  .bedroom-shape-page .dimension-line-top {
+    padding-bottom: 4px;
+  }
+
+  .bedroom-shape-page .dimension-line-left {
+    padding-right: 4px;
+  }
+
+  .bedroom-shape-page .room-plan {
+    border-width: 3px;
+  }
+
+  .bedroom-shape-page .planner-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .bedroom-shape-page .planner-metrics {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bedroom-shape-page *,
+  .bedroom-shape-page *::before,
+  .bedroom-shape-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
