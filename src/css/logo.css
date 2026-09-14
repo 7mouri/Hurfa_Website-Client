@@ -1,0 +1,75 @@
+/* src/css/logo.css */
+
+/* Base / Large Displays & 4K (min-width: 1400px) */
+.nav-logo {
+  height: 25vh !important;
+  max-height: 8vw !important;
+  min-height: 72px;
+  width: auto !important;
+  max-width: 220px !important;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease, filter 0.3s ease;
+}
+
+/* Standard Desktop (1200px - 1399px) */
+@media (max-width: 1399px) {
+  .nav-logo {
+    height: 22vh !important;
+    max-height: 7.8vw !important;
+    min-height: 64px;
+    max-width: 190px !important;
+  }
+}
+
+/* Small Desktop & Laptops (992px - 1199px) */
+@media (max-width: 1199px) {
+  .nav-logo {
+    height: 18vh !important;
+    max-height: 8.5vw !important;
+    min-height: 58px;
+    max-width: 170px !important;
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  .nav-logo {
+    height: 14vh !important;
+    max-height: 14vw !important;
+    max-width: 150px !important;
+    min-height: 64px !important;
+  }
+}
+
+/* Mobile Landscape & Phablets (576px - 767px) */
+@media (max-width: 767px) {
+  .nav-logo {
+    height: 13vh !important;
+    max-height: 18vw !important;
+    max-width: 135px !important;
+    min-height: 60px !important;
+  }
+}
+
+/* Standard Mobile Phones (380px - 575px) */
+@media (max-width: 575px) {
+  .nav-logo {
+    height: 12vh !important;
+    max-height: 22vw !important;
+    max-width: 125px !important;
+    min-height: 58px !important;
+  }
+}
+
+/* Extra Small Phones (< 380px) */
+@media (max-width: 379px) {
+  .nav-logo {
+    height: 11vh !important;
+    max-height: 24vw !important;
+    max-width: 110px !important;
+    min-height: 52px !important;
+  }
+}
+
+

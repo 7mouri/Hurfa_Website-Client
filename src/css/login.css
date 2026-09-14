@@ -1,0 +1,389 @@
+/* ==========================================================================
+   src/css/login.css - Hurfa Authentication (Login & Sign Up) Stylesheet
+   ========================================================================== */
+
+.login-page {
+  width: 100%;
+  min-height: calc(100vh - 85px);
+  background-color: #FAF8F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 100px;
+  box-sizing: border-box;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border: 1px solid #e7ded2;
+  border-radius: 24px;
+  padding: 40px 40px;
+  box-shadow: 0 12px 40px rgba(37, 72, 68, 0.08);
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ==========================================================================
+   Role Selector Tabs (Customer Portal vs Studio Admin)
+   ========================================================================== */
+.login-role-tabs {
+  display: flex;
+  background-color: #f7f3ed;
+  padding: 5px;
+  border-radius: 999px;
+  border: 1px solid #e7ded2;
+  margin-bottom: 30px;
+  gap: 6px;
+}
+
+.login-role-tab {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  color: #7d7365;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.login-role-tab svg {
+  color: inherit;
+  stroke: currentColor;
+  transition: all 0.2s ease;
+}
+
+.login-role-tab:hover {
+  color: #0f4c5c;
+}
+
+.login-role-tab.active {
+  background-color: #0f4c5c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 76, 92, 0.25);
+}
+
+.login-role-tab.active svg {
+  stroke: #ffffff;
+}
+
+/* ==========================================================================
+   Header Content
+   ========================================================================== */
+.login-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8c7e6c;
+  margin-bottom: 8px;
+}
+
+.login-header h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #0f4c5c;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.login-subtitle {
+  font-size: 0.92rem;
+  color: #6b6357;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Status Alerts & Validation Feedback
+   ========================================================================== */
+.login-status-message {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.login-status-message.error {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.login-status-message.success {
+  background-color: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.login-status-message svg {
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Form & Input Groups
+   ========================================================================== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+html[lang="ar"] .login-input-group {
+  text-align: right;
+}
+
+.login-input-group label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #254844;
+  letter-spacing: 0.02em;
+}
+
+.login-input-group input[type="text"],
+.login-input-group input[type="email"],
+.login-input-group input[type="tel"],
+.login-input-group input[type="password"] {
+  width: 100%;
+  padding: 13px 18px;
+  font-size: 0.95rem;
+  border: 1px solid #d8cebe;
+  border-radius: 12px;
+  background-color: #faf7f2;
+  color: #1f1d1b;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.login-input-group input:focus {
+  border-color: #0f4c5c;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(15, 76, 92, 0.12);
+}
+
+/* Password Row with Show/Hide Toggle & Forgot Link */
+.login-password-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-forgot-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-forgot-link:hover {
+  color: #d35400;
+  text-decoration: underline;
+}
+
+.login-password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login-password-wrapper input {
+  padding-right: 46px !important;
+}
+
+html[lang="ar"] .login-password-wrapper input {
+  padding-right: 18px !important;
+  padding-left: 46px !important;
+}
+
+.login-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #7d7365;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  z-index: 2;
+}
+
+html[lang="ar"] .login-password-toggle {
+  right: auto;
+  left: 12px;
+}
+
+.login-password-toggle:hover {
+  color: #0f4c5c;
+}
+
+/* Checkbox & Options */
+.login-options-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2px;
+}
+
+.login-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #57534e;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.login-checkbox-label input[type="checkbox"] {
+  accent-color: #0f4c5c;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Submit Button & Loading State
+   ========================================================================== */
+.login-submit-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #0f4c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 4px 16px rgba(15, 76, 92, 0.22);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-submit-btn:hover:not(:disabled) {
+  background-color: #0b3945;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(15, 76, 92, 0.32);
+}
+
+.login-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.login-spinner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer Info & Navigation
+   ========================================================================== */
+.login-footer {
+  margin-top: 28px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #f0e9df;
+  font-size: 0.88rem;
+  color: #6b6357;
+  line-height: 1.5;
+}
+
+.login-footer p {
+  margin: 0;
+}
+
+.login-link {
+  color: #0f4c5c;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-left: 4px;
+}
+
+html[lang="ar"] .login-link {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.login-link:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 520px) {
+  .login-page {
+    padding: 30px 12px 60px;
+  }
+
+  .login-card {
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  .login-role-tabs {
+    flex-direction: column;
+    border-radius: 16px;
+    gap: 4px;
+  }
+
+  .login-role-tab {
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
